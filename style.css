@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
+/* Header Section */
 header{
     background-color: deepskyblue;
     min-height: 80px;
 }
+/* Main Section */
 .formData{
     background-color: rgba(169, 169, 169, 0.2);
 }
@@ -16,6 +18,7 @@ header{
     color: #fff;
     width: 30%;
 }
+/* footer section */
 footer{
     min-height: 80px;
     background-color: darkcyan;
