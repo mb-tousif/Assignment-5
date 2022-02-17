@@ -28,7 +28,8 @@ document.getElementById("savingButton").addEventListener("click", function(){
   let totalBalance = balanceCalculation(totalIncome, totalExpenditure);
   document.getElementById("remainingBalance").innerText;
   remainingBalance.innerText = totalBalance;
-  if(totalBalance<totalExpenditure){
+  // --------error handling------------
+  if(totalIncome<totalExpenditure){
     alert("Opps! You do not have enought money!!!")
   }
 
