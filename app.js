@@ -1,10 +1,10 @@
 // ------Income & Expenditure Section-----------
 document.getElementById("calculationButton").addEventListener("click", function(){
-    let income = document.getElementById("incomeField").value
+    let income = document.getElementById("incomeField").value;
     const totalIncome = parseInt(income);
-    let food = document.getElementById("foodField").value
-    let rent = document.getElementById("rentField").value
-    let clothes = document.getElementById("clothesField").value
+    let food = document.getElementById("foodField").value;
+    let rent = document.getElementById("rentField").value;
+    let clothes = document.getElementById("clothesField").value;
     let expenditure = parseInt(food) + parseInt(rent) + parseInt(clothes);
     let totalExpense = document.getElementById("expense");
     totalExpense.innerText = expenditure;
@@ -28,6 +28,10 @@ document.getElementById("savingButton").addEventListener("click", function(){
   let totalBalance = balanceCalculation(totalIncome, totalExpenditure);
   document.getElementById("remainingBalance").innerText;
   remainingBalance.innerText = totalBalance;
+  if(totalBalance<totalExpenditure){
+    alert("Opps! You do not have enought money!!!")
+  }
+
   // -----Clear Input Field-----
   incomeField.value = "";
   foodField.value = "";
